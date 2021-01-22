@@ -1,0 +1,215 @@
+/*----------------------------------------------------Reset----------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*----------------------------------------------------ID----------------------------------------------------*/
+#Enough{
+    display:none;
+}
+/*----------------------------------------------------Class----------------------------------------------------*/
+.BurgerUl{
+    position:absolute;
+    transform: translateX(-300%);
+    transition: 0.7s;
+    z-index:100;
+    top:0;
+    left:-1000;
+    width:100vw;
+    height:200vh;
+    background:#cae4db;
+}
+.EnoughLocation{
+    transform: translateX(82vw);
+    justify-content:center;
+    font-size:50px;
+    margin-left:75px;
+    padding-top:50px;
+    margin-bottom:40px;
+    display:none;
+    z-index:50;
+}
+.Burger{
+    list-style-type:none;
+    height:15vh;
+    padding-top:30px;
+    text-align:center;
+    font-size:50px;
+}
+.Header-BC{
+    background-color:#f5f4f4;
+    margin-left:-20px;
+    margin-right:0px;
+}
+.Nav-BC{
+    margin-top:-10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+}
+.Main-BC{
+    background-color:black;
+}
+.Logo{
+    margin-top:10px;
+    margin-left:25px;
+    width:15vw;
+}
+.Nav{
+    margin-top:15px;
+    padding-right:50px;
+    width:10vw;
+    
+}
+.Nav-Line{
+    border-bottom-style:solid;
+    border-bottom-color:black;
+    border-bottom-width:1px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.Introduction-Flex{
+    display:flex;
+    justify-content:space-between;
+}
+.Introduction-Left{
+    width:49vw;
+    height:auto;
+    opacity:0.5;
+}
+.Introduction-Right{
+    width:49vw;
+    height:auto;
+    opacity:0.5;
+}
+.Introduction-Left:Hover{
+    opacity:1;
+    }
+.Introduction-Right:Hover{
+    opacity:1;
+}
+.Client-Border{
+    Border:5px;
+    Border-style:solid;
+    Border-color:rgb(172, 172, 172);
+    Background-color:#cae4db;
+}
+.Client-Flex{
+    display:flex;
+    justify-content:space-between;
+
+}
+.Client-Icon{
+width:12vw;
+height:auto;
+}
+.Footer-BC{
+    background-color:#cdac81;
+}
+.Footer-LogoFlex{
+    display:flex;
+    justify-content:center;
+}
+.Footer-Flex{
+    display:flex;
+    justify-content:space-between;
+}
+.Footer-Line{
+    Border:5px;
+    Border-style:solid;
+    Border-color:#00303f;
+}
+/*----------------------------------------------------Tag----------------------------------------------------*/
+h1{
+    font-weight:bold;
+    padding-top:15px;
+    padding-left:15px;
+    color:#eab14e;
+    font-size:40px;
+    font-family:華康儷粗圓 微軟正黑體 新細明體;
+    text-shadow:0 0 0.2em white,0 0 0.2em black,0 0 0.2em black;
+}
+ul{
+    color:#00303f;
+    font-size:30px;
+    font-family:華康儷粗圓 微軟正黑體 新細明體;
+    margin-left:20px;
+    margin-Right:20px;
+}
+li{
+    font-size:20px;
+    padding-left:9px;
+    padding-top:15px;
+    list-style-type:disc;
+    list-style-position: inside;
+}
+a{
+    color:#00303f;
+    text-decoration:none;
+}
+/*-----------------------------------------------------RWD----------------------------------------------------*/
+@media(max-width:900px){
+    .EnoughLocation{
+        display:flex;
+        justify-content: end;
+        
+
+    }
+    #Enough:checked ~ .BurgerUl{
+        transform: translateX(-10%);
+    }
+    .Logo{
+        display:none;
+    }
+    .Nav-BC{
+
+        justify-content: end;
+    }
+    .Nav{
+        display:none;
+    }
+}
