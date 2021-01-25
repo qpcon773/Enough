@@ -91,8 +91,11 @@ table {
     justify-content:space-between;
     align-items: center; 
 }
-.Main-BC{
+.Main-BCinindex{
     background-color:black;
+}
+.Main-BC{
+    background-color:#cae4db;
 }
 .Logo{
     margin-top:10px;
@@ -141,7 +144,6 @@ table {
 .Client-Flex{
     display:flex;
     justify-content:space-between;
-
 }
 .Client-Icon{
 width:12vw;
@@ -162,6 +164,36 @@ height:auto;
     Border:5px;
     Border-style:solid;
     Border-color:#00303f;
+}
+.About{
+    font-weight:bold;
+    padding-top:15px;
+    padding-left:15px;
+    color:#eab14e;
+    font-size:30px;
+    font-family:華康儷粗圓 微軟正黑體 新細明體;
+    text-shadow:0 0 0.2em white,0 0 0.2em black,0 0 0.2em black;
+    text-align:center;
+}
+.AboutLast{
+    font-weight:bold;
+    padding-top:15px;
+    padding-left:15px;
+    color:#eab14e;
+    font-size:30px;
+    font-family:華康儷粗圓 微軟正黑體 新細明體;
+    text-shadow:0 0 0.2em white,0 0 0.2em black,0 0 0.2em black;
+    text-align:right;
+}
+.Member-Icon{
+width:20vw;
+height:auto;
+}
+.Merber-Border{
+    Border:2px;
+    Border-style:solid;
+    Border-color:rgb(172, 172, 172);
+    Background-color:#cae4db;
 }
 /*----------------------------------------------------Tag----------------------------------------------------*/
 h1{
