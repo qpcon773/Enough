@@ -169,31 +169,44 @@ height:auto;
     font-weight:bold;
     padding-top:15px;
     padding-left:15px;
-    color:#eab14e;
+    color:#00303f;
     font-size:30px;
     font-family:華康儷粗圓 微軟正黑體 新細明體;
-    text-shadow:0 0 0.2em white,0 0 0.2em black,0 0 0.2em black;
+    text-shadow:0 0 0.2em yellow,0 0 0.2em white;
     text-align:center;
 }
 .AboutLast{
     font-weight:bold;
     padding-top:15px;
     padding-left:15px;
-    color:#eab14e;
+    color:#00303f;
     font-size:30px;
     font-family:華康儷粗圓 微軟正黑體 新細明體;
-    text-shadow:0 0 0.2em white,0 0 0.2em black,0 0 0.2em black;
+    text-shadow:0 0 0.2em white;
     text-align:right;
 }
 .Member-Icon{
-width:20vw;
+width:25vw;
 height:auto;
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-top:10px;
+margin-bottom:10px;
 }
 .Merber-Border{
     Border:2px;
     Border-style:solid;
     Border-color:rgb(172, 172, 172);
     Background-color:#cae4db;
+}
+.Merber-text{
+    padding-top:15px;
+    padding-bottom:15px;
+    font-size:22px;
+    font-family:華康儷粗圓 微軟正黑體 新細明體;
+    text-align:center;
+    line-height:35px;
 }
 /*----------------------------------------------------Tag----------------------------------------------------*/
 h1{
@@ -204,6 +217,15 @@ h1{
     font-size:40px;
     font-family:華康儷粗圓 微軟正黑體 新細明體;
     text-shadow:0 0 0.2em white,0 0 0.2em black,0 0 0.2em black;
+}
+h2{
+    font-weight:bold;
+    padding-top:5px;
+    color:white;
+    font-size:30px;
+    font-family:華康儷粗圓 微軟正黑體 新細明體;
+    text-shadow:0 0 0.2em black;
+    text-align:center;
 }
 ul{
     color:#00303f;
