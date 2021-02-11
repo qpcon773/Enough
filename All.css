@@ -51,6 +51,15 @@ table {
 #Enough{
     display:none;
 }
+#Display-1{
+    display:none;
+}
+#Display-2{
+    display:none;
+}
+#Display-3{
+    display:none;
+}
 /*----------------------------------------------------Class----------------------------------------------------*/
 .BurgerUl{
     position:absolute;
@@ -200,7 +209,7 @@ height:auto;
     Border-color:rgb(172, 172, 172);
     Background-color:#cae4db;
 }
-.Merber-text{
+.Merber-Text{
     padding-top:15px;
     padding-bottom:15px;
     font-size:22px;
@@ -223,6 +232,18 @@ height:auto;
     margin-right:auto;
     margin-top:10px;
     margin-bottom:10px;
+}
+.News-Text{
+    padding-top:15px;
+    padding-bottom:15px;
+    font-size:22px;
+    font-family:華康儷粗圓 微軟正黑體 新細明體;
+    line-height:35px;
+    text-align:center;
+}
+.News-Flex{
+    display:flex;
+    justify-content:space-between;
 }
 /*----------------------------------------------------Tag----------------------------------------------------*/
 h1{
@@ -266,8 +287,6 @@ a{
     .EnoughLocation{
         display:flex;
         justify-content: end;
-        
-
     }
     #Enough:checked ~ .BurgerUl{
         transform: translateX(-10%);

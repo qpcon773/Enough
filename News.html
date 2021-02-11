@@ -5,6 +5,32 @@
 <meta charset='UTF-8'>
 <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
 <link rel="stylesheet" href="All.css">
+<script type='text/javascript'>
+    function NewsSwitch(Number){
+        if (Number==1){
+        var NewsId=document.getElementById('Display-1');
+        var Switch=NewsId.style.display;
+        if (Switch=='block'){NewsId.style.display='none'}else{
+        NewsId.style.display='block';
+        }
+        }
+        if (Number==2){
+        var NewsId=document.getElementById('Display-2');
+        var Switch=NewsId.style.display;
+        if (Switch=='block'){NewsId.style.display='none'}else{
+        NewsId.style.display='block';
+        }
+        }
+        if (Number==3){
+        var NewsId=document.getElementById('Display-3');
+        var Switch=NewsId.style.display;
+        if (Switch=='block'){NewsId.style.display='none'}else{
+        NewsId.style.display='block';
+        }   
+        }
+    }
+</script>
+
 </head>
 <body>
     <header class='Header-BC'>
@@ -27,9 +53,48 @@
     </nav>
     <p class='Nav-Line'></p>
 </header>
-
+ 
 <main class='Main-BC'>
-    
+    <div class='Client-Border'>
+        <h1 style='text-align:center'>最新消息</h1></br>
+        <p class='Merber-Border'></p>
+            <div class='News-Text News-Flex'>
+            <a href='#'  onclick='NewsSwitch(1)'><span style='color:brown'>【新品快訊】</span>
+            <span>夏天還在為了蚊蟲困擾嗎「Enough 蚊帳」還給您安心夏夜！！</span></a>
+            <span>2021-02-11</span>
+            </div>
+            <span class='News-Text' id='Display-1'>「Enough蚊帳」是您渡過漫漫長夜的好夥伴</br>
+                本產品採失傳古代技術製造而成</br>
+                30公分寬空隙，讓您有最多的通風體驗</br>
+                設計師與產品照片尚未公開</br></br>
+                敬請期待</span>
+        <p class='Merber-Border'></p>
+            <div class='News-Text News-Flex'>
+            <a href='#'  onclick='NewsSwitch(2)'><span style='color:rgb(18, 194, 32)'>【企業相關】</span>
+            <span>Enough文創股市突破新高，18763點創業界新紀錄</span></a>
+            <span>2021-02-06</span>
+            </div>
+            <span class='News-Text' id='Display-2'>
+                喜報！</br>
+                Enough文創股價攀升新高，達到了18763點！！</br>
+                但是老闆對股市完全不了解</br>
+                問克里斯登又已讀不回</br>
+                算是好事吧？是吧？
+            </span>
+            
+        <p class='Merber-Border'></p>
+            <div class='News-Text News-Flex'>
+            <a href='#'  onclick='NewsSwitch(3)'><span style='color:rgb(47, 102, 221)'>【展店通知】</span>
+            <span>東部地區的朋友有福了！Enough文創台東分店即將開張</span></a>
+            <span>2021-01-29</span>
+            </div>
+            <span class='News-Text' id='Display-3'>Enough文創，實體店面將在大台東地區展店</br>
+                從整地種植植物到建設</br>
+                耗費15年的時間、75年的規劃</br></br>
+                終於將在2021/2/31日正式營業</br>
+                詳情請待2021/2/30日詳細介紹</span>
+            </div>
+    </div>
 </main>
 
 <footer class='Footer-BC'>
