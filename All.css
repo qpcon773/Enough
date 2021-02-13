@@ -245,6 +245,47 @@ height:auto;
     display:flex;
     justify-content:space-between;
 }
+.Product-L{
+    width:10vw;
+    height:auto;
+    float:left;
+}
+.Product-R{
+    width:auto;
+    height:auto;
+    display:block;
+    background-color: brown;
+}
+.ProductLeft-Border{
+    Border:1px;
+    Border-style:solid;
+    Border-color:rgb(172, 172, 172);
+    margin-left:1vw;
+    margin-right:1vw;
+    opacity:0.5;
+}
+.Product-Pic{
+    height:auto;
+    width:30vw;
+    margin-top:4vh;
+    Border:1px;
+    Border-style:solid;
+    Border-color:black;
+    margin-left:auto;
+    margin-right:auto;
+}
+.Product-Text{
+    font-size:22px;
+    font-family:華康儷粗圓 微軟正黑體 新細明體;
+    line-height:35px;
+    padding-top:10px;
+    text-align:center;
+}
+.Product-Border{
+    Border:2px;
+    Border-style:solid;
+    Border-color:rgb(172, 172, 172);
+}
 /*----------------------------------------------------Tag----------------------------------------------------*/
 h1{
     font-weight:bold;
@@ -258,6 +299,16 @@ h1{
 h2{
     font-weight:bold;
     padding-top:5px;
+    color:white;
+    font-size:30px;
+    font-family:華康儷粗圓 微軟正黑體 新細明體;
+    text-shadow:0 0 0.2em black;
+    text-align:center;
+}
+h3{
+    text-align:center;
+    font-weight:bold;
+    padding-top:10px;
     color:white;
     font-size:30px;
     font-family:華康儷粗圓 微軟正黑體 新細明體;
@@ -282,6 +333,28 @@ a{
     color:#00303f;
     text-decoration:none;
 }
+Button{
+    background-color:#cae4db;
+    margin-left:1vw;
+    margin-top:15px;
+    margin-bottom:auto;
+    padding:10px 0px 10px 0px;
+    text-align:center;
+    width:8vw;
+    height:auto;
+    font-size:20px;
+    font-family:華康儷粗圓 微軟正黑體 新細明體;
+    Border:1px;
+    Border-style:solid;
+    Border-color:rgb(172, 172, 172);
+}
+Button:hover{
+    background-color:rgb(172, 172, 172);
+    color:white;
+}
+Button:focus{
+    outline:0;
+}
 /*-----------------------------------------------------RWD----------------------------------------------------*/
 @media(max-width:900px){
     .EnoughLocation{
@@ -300,5 +373,8 @@ a{
     }
     .Nav{
         display:none;
+    }
+    Button{
+        font-size:10px;
     }
 }
