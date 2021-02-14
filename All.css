@@ -60,6 +60,21 @@ table {
 #Display-3{
     display:none;
 }
+#Life{
+    display:block;
+}
+#Food{
+    display:block;
+}
+#Bulid{
+    display:block;
+}
+#Write{
+    display:block;
+}
+#Metal{
+    display:block;
+}
 /*----------------------------------------------------Class----------------------------------------------------*/
 .BurgerUl{
     position:absolute;
@@ -254,7 +269,6 @@ height:auto;
     width:auto;
     height:auto;
     display:block;
-    background-color: brown;
 }
 .ProductLeft-Border{
     Border:1px;
@@ -273,12 +287,14 @@ height:auto;
     Border-color:black;
     margin-left:auto;
     margin-right:auto;
+    display:block;
 }
 .Product-Text{
     font-size:22px;
     font-family:華康儷粗圓 微軟正黑體 新細明體;
     line-height:35px;
     padding-top:10px;
+    padding-bottom:10px;
     text-align:center;
 }
 .Product-Border{
@@ -372,6 +388,9 @@ Button:focus{
         justify-content: end;
     }
     .Nav{
+        display:none;
+    }
+    .Product-L{
         display:none;
     }
     Button{

@@ -5,6 +5,65 @@
 <meta charset='UTF-8'>
 <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
 <link rel="stylesheet" href="All.css">
+<script type='Text/javascript'>
+    function ProductSwitch(Number){
+        if (Number==1){
+            Loading();
+            Life.style.display='block';
+            Food.style.display='block';
+            Bulid.style.display='block';
+            Write.style.display='block';
+            Metal.style.display='block';
+                }
+        if (Number==2){
+            Loading();
+            Life.style.display='block';
+            Food.style.display='none';
+            Bulid.style.display='none';
+            Write.style.display='none';
+            Metal.style.display='none';
+                }
+         if (Number==3){
+            Loading();
+            Life.style.display='none';
+            Food.style.display='block';
+            Bulid.style.display='none';
+            Write.style.display='none';
+            Metal.style.display='none';
+                }        
+        if (Number==4){
+            Loading();
+            Life.style.display='none';
+            Food.style.display='none';
+            Bulid.style.display='block';
+            Write.style.display='none';
+            Metal.style.display='none';
+                }  
+        if (Number==5){
+            Loading();
+            Life.style.display='none';
+            Food.style.display='none';
+            Bulid.style.display='none';
+            Write.style.display='block';
+            Metal.style.display='none';
+                }  
+        if (Number==6){
+            Loading();
+            Life.style.display='none';
+            Food.style.display='none';
+            Bulid.style.display='none';
+            Write.style.display='none';
+            Metal.style.display='block';
+                }          
+    }
+    function Loading(){
+    var Life=document.getElementById('Life');
+    var Food=document.getElementById('Food');  
+    var Bulid=document.getElementById('Bulid');  
+    var Write=document.getElementById('Write');   
+    var Metal=document.getElementById('Metal');
+    }
+</script>
 </head>
 <body>
     <header class='Header-BC'>
@@ -32,47 +91,128 @@
     <div class='Product-L'>
         <p class='News-Text' style='font-weight:bold'>分類篩選</p>
         <p class='ProductLeft-Border'></p>
-        <button>所有商品</button>
-        <button>生活小物</button>
-        <button>經典美食</button>
-        <button>營造建案</button>
-        <button>文學著作</button>
-        <button>金屬鍛造</button>
+        <button onclick='ProductSwitch(1)'>所有商品</button>
+        <button onclick='ProductSwitch(2)'>生活小物</button>
+        <button onclick='ProductSwitch(3)'>經典美食</button>
+        <button onclick='ProductSwitch(4)'>營造建案</button>
+        <button onclick='ProductSwitch(5)'>文學著作</button>
+        <button onclick='ProductSwitch(6)'>金屬鍛造</button>
     </div>
     
     <div class='Client-Border' style='margin-left:10vw'>
         <div class='Product-R' >
-
+            <div id='Life'>
+                <img src='19260003o4132513ssq0.jpg' title='醬香不求人' class='Product-Pic'>
+                <h3>醬香不求人</h3></br>
+                <p class='Product-Text'>
+                本月暢銷排行冠軍</br>
+                法國名主廚「亞歷斯．花蓮斯」監製</br>
+                本產品使用自廣東省進口頂級紫檀木</br>
+                加入了陳年醬油熬煮80天後</br>
+                再經65年經驗老師傅親手削製而成</br></br>
+                不僅握把舒適</br>
+                就連抓癢的角度都符合人體工學</br></br>
+                醬油的香氣更是讓抓癢體驗提升到另一個階級。</br></br>
+                售價</br>
+                <mark>480NTD</mark></p>
+                <p class='Product-Border'></p>
+                <img src='pexels-photo-390426.jpg' title='宇宙力量反重力燈泡' class='Product-Pic'>
+                <h3>宇宙力量反重力燈泡</h3></br>
+                <p class='Product-Text'>
+                NASA太空人 「奧莉芬．赫本」監製</br>
+                本產品採用NASA太空技術</br>
+                燈泡壽命長達6小時</br></br>
+                最大的特色在於本產品</br>
+                只要放在無重力的環境之下</br>
+                就可以浮在空中！！</br></br>
+                售價</br>
+                <mark>1800NTD/顆</mark>
+                </p>
+                <p class='Product-Border'></p>
+            </div>
+            <div id='Food'>
+                <img src='pexels-photo-4499212.jpg' title='卡吱屋經典原味洋芋片' class='Product-Pic'>
+                <h3>卡吱屋經典原味洋芋片</h3></br>
+                <p class='Product-Text'>
+                    知名電競戰隊 「卡吱卡吱公會」限定聯名產品</br></br>
+                    使用馬來西亞進口馬來馬鈴馬鈴薯</br>
+                    經過高溫39度油炸至最美味的3分熟</br>
+                    佐料則使用撒哈拉外海的頂級海鹽</br></br>
+                    象徵著大地薯片與象徵著大海的海鹽</br>
+                    兩者相互作用，成為味蕾最棒的交響曲</br></br>
+                    售價</br>
+                    <mark>小包裝：12g / 170NTD</br>
+                    大包裝：15kg / 1500NTD</mark></br></br>
+                    *現在購買任一大小洋芋片滿30包即贈「高美牙醫診所」體驗卷乙張
+                </p>
+                <p class='Product-Border'></p>
+                <img src='pexels-photo-5623619.jpg' title='荊棘飛魚薑餅' class='Product-Pic'>
+                <h3>荊棘飛魚薑餅</h3></br>
+                <p class='Product-Text'>
+                    臺灣知名文學作家「巴力萬．賽濱」烹飪</br></br>
+                    烤的全焦的加拿大薑餅</br>
+                    搭配獨特黑糖糖漿</br>
+                    大口咬下的瞬間</br>
+                    天國與大腸癌映入眼簾</br></br>
+                    內層含蘭嶼特產飛魚 的魚刺和魚骨</br>
+                    保證含有108根以上完整魚刺</br></br>
+                    售價</br>
+                    <mark> 飛魚刺口味：750NTD/10片</br>
+                    虱目魚刺限定款：750NTD/7片</br>
+                    鵝骨頭極致版：750NTD/3片</br></mark>
+                </p>
+                <p class='Product-Border'></p>
+            </div>
+            <div id='Bulid'>
+                <img src='pexels-nancy-bourque-1209978.jpg' title='百家宴－碧尚園' class='Product-Pic'>
+                <h3>百家宴－碧尚園</h3></br>
+                <p class='Product-Text'>
+                    榮登MSHA『最想居住建案』第四十五名</br></br>
+                    新加坡經濟學家「克里斯登．李」一人設計</br>
+                    打造永和商圈新指標</br></br>
+                    高強度鋼骨建材 ，可抵禦芮氏規模2.0以下地震</br>
+                    鄰近永和、福和學區，3分鐘到捷運站 開門左轉洗手間</br>
+                    坐落永和中心商圈規劃區，25年內必繁華</br>
+                    公園景觀第一排，左轉洗手間，右轉溜滑梯，對面圖書館</br>
+                    10.804公頃大花園，公設比業界第一，九成五</br></br>
+                    <mark>總價800萬元起</mark>
+                </p>
+                <p class='Product-Border'></p>
+            </div>
+            <div id='Write'>
+                <img src='pexels-photo  3747163.png' title='外星人的第二十一道陰影' class='Product-Pic'>
+                <h3>外星人的第二十一道陰影</h3></br>
+                <p class='Product-Text'>
+                    巴加爾王國王儲「拉．加特德．巴加爾」原著</br>
+                    資工系大學延畢生「孫宇華」與「Google公司」共同翻譯</br></br>
+                    真人真事改編 2020年暢銷書籍</br>
+                    "外星人的第二十道陰影"正統續篇</br>
+                    "外星人的第二十一道陰影"</br></br>
+                    結合了烤地瓜與本格推理的史詩喜劇最終章</br>
+                    試閱者正解率97%</br>
+                    你 能找的到解答嗎？</br></br>
+                    售價</br>
+                    <mark>280NTD</mark></br></br></br>
+                    啊 對 兇手是車掌 然後主角會死掉
+                </p>
+                <p class='Product-Border'></p>
+            </div>
+            <div id='Metal'>
+                <img src='architecture-iron-steel-building-53176.jpg' title='德川營造 ：二十四萬兩金鋼筋' class='Product-Pic'>
+                <h3>德川營造 ：二十四萬兩金鋼筋</h3></br>
+                <p class='Product-Text'>
+                    前德川家御用護衛第246代後繼者「鈴本協子」監製</br></br>
+                    利用鈴本家秘傳冶煉技術，打造出空心結構鋼筋</br>
+                    素材採用德川家失傳的二十四萬兩黃金重磅製造</br>
+                    黃金與鋼材比率0.000735 : 1</br></br>
+                    售價</br>
+                    <mark>採該時段黃金時價4倍</mark>
+                </p>
+                <p class='Product-Border'></p>
+            </div>
         </div>
     </div>
-    <div id='Life'>
-        <img src='19260003o4132513ssq0.jpg' title='醬香不求人' class='Product-Pic'>
-        <h3>醬香不求人</h3></br>
-        <p class='Product-Text'>
-            本月暢銷排行冠軍</br>
-            法國名主廚「亞歷斯．花蓮斯」監製</br>
-            本產品使用自廣東省進口頂級紫檀木</br>
-            加入了陳年醬油熬煮80天後</br>
-            再經65年經驗老師傅親手削製而成</br></br>
-            不僅握把舒適</br>
-            就連抓癢的角度都符合人體工學</br></br>
-            醬油的香氣更是讓抓癢體驗提升到另一個階級。</br></br>
-            售價</br>
-            <mark>480NTD</mark></p>
-            <p class='Product-Border'></p>
-        <img src='pexels-photo-390426.jpg' title='宇宙力量反重力燈泡' class='Product-Pic'>
-        <h3>宇宙力量反重力燈泡</h3></br>
-        <p class='Product-Text'>
-            NASA太空人 「奧莉芬．赫本」監製</br>
-            本產品採用NASA太空技術</br>
-            燈泡壽命長達6小時</br></br>
-            最大的特色在於本產品</br>
-            只要放在無重力的環境之下</br>
-            就可以浮在空中！！</br></br>
-            售價</br>
-            <mark>1800NTD/顆</mark>
-            </p>
-        </div>
+        
 </main>
 
 <footer class='Footer-BC'>
