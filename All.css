@@ -372,19 +372,18 @@ Button:focus{
     outline:0;
 }
 /*-----------------------------------------------------RWD----------------------------------------------------*/
-@media(max-width:900px){
+@media all and (max-width: 1000px){
     .EnoughLocation{
         display:flex;
         justify-content: end;
     }
     #Enough:checked ~ .BurgerUl{
-        transform: translateX(-10%);
+        transform: translateX(-15%);
     }
     .Logo{
         display:none;
     }
     .Nav-BC{
-
         justify-content: end;
     }
     .Nav{
