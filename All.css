@@ -79,12 +79,12 @@ table {
 .BurgerUl{
     position:absolute;
     transform: translateX(-300%);
-    transition: 0.7s;
+    transition:0.7s;
     z-index:100;
     top:0;
     left:-1000;
     width:100vw;
-    height:200vh;
+    height:100vh;
     background:#cae4db;
 }
 .EnoughLocation{
@@ -130,7 +130,6 @@ table {
     margin-top:15px;
     padding-right:50px;
     width:10vw;
-    
 }
 .Nav-Line{
     border-bottom-style:solid;
@@ -141,7 +140,11 @@ table {
 }
 .Introduction-Flex{
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
+}
+.Introduction{
+    width:100vw;
+    height:auto;
 }
 .Introduction-Left{
     width:49vw;
@@ -302,6 +305,13 @@ height:auto;
     Border-style:solid;
     Border-color:rgb(172, 172, 172);
 }
+.Product-Border-All{
+    Border:5px;
+    Border-style:solid;
+    Border-color:rgb(172, 172, 172);
+    Background-color:#cae4db;
+    margin-left:10vw
+}
 /*----------------------------------------------------Tag----------------------------------------------------*/
 h1{
     font-weight:bold;
@@ -372,7 +382,7 @@ Button:focus{
     outline:0;
 }
 /*-----------------------------------------------------RWD----------------------------------------------------*/
-@media all and (max-width: 1000px){
+@media screen and (max-width: 1000px){
     .EnoughLocation{
         display:flex;
         justify-content: end;
@@ -390,9 +400,14 @@ Button:focus{
         display:none;
     }
     .Product-L{
-        display:none;
+        float:none;
+        display:inline;
     }
     Button{
-        font-size:10px;
+        margin-left:7vw;
+        margin-bottom:10px;
+    }
+    .Product-Border-All{
+        margin-left:0px;
     }
 }
