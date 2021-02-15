@@ -116,7 +116,7 @@ table {
     align-items: center; 
 }
 .Main-BCinindex{
-    background-color:black;
+    background-color:#cae4db;
 }
 .Main-BC{
     background-color:#cae4db;
@@ -145,22 +145,6 @@ table {
 .Introduction{
     width:100vw;
     height:auto;
-}
-.Introduction-Left{
-    width:49vw;
-    height:auto;
-    opacity:0.5;
-}
-.Introduction-Right{
-    width:49vw;
-    height:auto;
-    opacity:0.5;
-}
-.Introduction-Left:Hover{
-    opacity:1;
-    }
-.Introduction-Right:Hover{
-    opacity:1;
 }
 .Client-Border{
     Border:5px;
@@ -191,6 +175,7 @@ height:auto;
     Border:5px;
     Border-style:solid;
     Border-color:#00303f;
+    margin-bottom:5px;
 }
 .About{
     font-weight:bold;
@@ -347,6 +332,7 @@ ul{
     font-family:華康儷粗圓 微軟正黑體 新細明體;
     margin-left:20px;
     margin-Right:20px;
+    margin-bottom:10px;
 }
 li{
     font-size:20px;
